@@ -1,5 +1,7 @@
 const express = require("express")
 const Router = express.Router()
-const { getAllTasks } = require("../controllers/tasksController")
-Router.route("").get()
+const { signUp, signIn } = require("../controllers/userController")
+Router.post("/signup", signUp)
+Router.post("/signin", signIn)
+
 module.exports = Router

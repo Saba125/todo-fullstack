@@ -1,5 +1,5 @@
 const getAllTasks = async (req, res) => {
-  res.send("All tasks")
+  res.send("Tasks")
 }
 module.exports = {
   getAllTasks,
